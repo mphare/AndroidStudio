@@ -1,0 +1,8 @@
+WebContent/WEB-INF/classes/
+build
+*.iml
+.idea
+.DS_*
+classes
+.settings
+*.class

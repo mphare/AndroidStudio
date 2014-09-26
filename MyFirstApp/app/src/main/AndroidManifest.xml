@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zixcorp.myfirstapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat" >
+
+        <!--
+             ====================================================================  
+				Main Activity
+        -->
+        <!-- android:theme="@style/AppTheme" -->
+        <activity
+            android:name="com.tele.on.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             ====================================================================
+        		Display Message Activity
+        -->
+        <activity
+            android:name="com.tele.on.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.tele.on.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.MainActivity" />
+        </activity>
+
+        <!--
+             ====================================================================
+        		Search Activity
+        -->
+        <activity
+            android:name="com.tele.on.DisplaySearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.tele.on.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.MainActivity" />
+        </activity>
+
+        <!--
+             ====================================================================
+        		Display Settings
+        -->
+        <activity
+            android:name="com.tele.on.DisplaySettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.tele.on.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.MainActivity" />
+        </activity>
+
+        <!--
+             ====================================================================
+        		Article Fragment
+        -->
+        <activity
+            android:name="com.tele.on.ArticleFragment"
+            android:label="@string/title_activity_article_fragment" >
+        </activity>
+        <!--
+             ====================================================================
+        -->
+        <activity
+            android:name="com.tele.on.DisplaySearchLargeButtonActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.tele.on.DisplaySearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.DisplaySearchActivity" />
+        </activity>
+        <!--
+             ====================================================================
+        -->
+        <activity
+            android:name="com.tele.on.DisplaySearchSmallButtonActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.tele.on.DisplaySearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.DisplaySearchActivity" />
+        </activity>
+        <!--
+             ====================================================================
+        -->
+        <activity
+            android:name="com.tele.on.DisplaySearchNewButtonActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.tele.on.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.MainActivity" />
+        </activity>
+        <!--
+             ====================================================================
+        -->
+        <activity
+            android:name="com.tele.on.DisplayTopActivity"
+            android:label="@string/title_activity_top"
+            android:parentActivityName="com.tele.on.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.MainActivity" />
+        </activity>
+        <!--
+             ====================================================================
+        -->
+        <activity
+            android:name="com.tele.on.DisplayBottomActivity"
+            android:label="@string/title_activity_bottom"
+            android:parentActivityName="com.tele.on.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.MainActivity" />
+        </activity>
+        <!--
+             ====================================================================
+        -->
+        <activity
+            android:name="com.tele.on.DisplayGoShowActivity"
+            android:label="@string/title_activity_goshow"
+            android:parentActivityName="com.tele.on.DisplayBottomActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.DisplayBottomActivity" />
+        </activity>
+        <!--
+             ====================================================================
+        -->
+        <!--
+             ====================================================================
+        -->
+        <!--
+             ====================================================================
+        -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    </application>
+
+</manifest>
