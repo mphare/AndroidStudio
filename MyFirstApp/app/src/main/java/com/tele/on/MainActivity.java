@@ -135,4 +135,15 @@ public class MainActivity extends ActionBarActivity
     EditText editText = (EditText) findViewById(R.id.edit_message);
     editText.setText("");
   }
+
+   public void sendNewScreen(View view) {
+       // Do something in response to the button
+       Intent intent = new Intent(this, NewScreenActivity.class);
+       startActivity(intent);
+   }
+    public void sendSplitScreen(View view) {
+        // Do something in response to the button
+        Intent intent = new Intent(this, SplitScreenActivity.class);
+        startActivity(intent);
+    }
 }

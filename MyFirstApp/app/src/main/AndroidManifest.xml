@@ -42,6 +42,30 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zixcorp.myfirstapp.MainActivity" />
         </activity>
+        <!--
+             ====================================================================
+        		New Screen Activity
+        -->
+        <activity
+            android:name="com.tele.on.NewScreenActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.tele.on.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.MainActivity" />
+        </activity>
+        <!--
+             ====================================================================
+        		Split Screen Activity
+        -->
+        <activity
+            android:name="com.tele.on.SplitScreenActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.tele.on.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zixcorp.myfirstapp.MainActivity" />
+        </activity>
 
         <!--
              ====================================================================
