@@ -6,3 +6,4 @@ build
 classes
 .settings
 *.class
+.gradle/
