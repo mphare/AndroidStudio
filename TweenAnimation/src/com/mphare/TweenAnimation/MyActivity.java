@@ -20,5 +20,9 @@ public class MyActivity extends Activity
     ImageView sun = (ImageView) findViewById(R.id.sun);
     Animation sunRise = AnimationUtils.loadAnimation(this, R.anim.sun_rise);
     sun.startAnimation(sunRise);
+
+    ImageView clock = (ImageView) findViewById(R.id.clock);
+    Animation clockTurn = AnimationUtils.loadAnimation(this, R.anim.clock_turn);
+    clock.startAnimation(clockTurn);
   }
 }
