@@ -2,18 +2,27 @@ package com.zixcorp.socialapp;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 @SuppressLint("NewApi")
 public class OverviewActivity extends Activity
 {
   protected Object mActionMode;
+  protected Button button;
+
+  public void showImage(View view)
+  {
+    Intent intent = new Intent(this, ImageActivity.class);
+    startActivity(intent);
+  }
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -55,41 +64,41 @@ public class OverviewActivity extends Activity
   }
 
   private ActionMode.Callback mActionModeCallback = new ActionMode.Callback()
-                                                  {
-                                                    @SuppressLint("NewApi")
-                                                    @Override
-                                                    public boolean onCreateActionMode(ActionMode mode, Menu menu)
-                                                    {
-                                                      MenuInflater inflater = mode.getMenuInflater();
-                                                      inflater.inflate(R.menu.contextual, menu);
-                                                      return true;
-                                                    }
+  {
+    @SuppressLint("NewApi")
+    @Override
+    public boolean onCreateActionMode(ActionMode mode, Menu menu)
+    {
+      MenuInflater inflater = mode.getMenuInflater();
+      inflater.inflate(R.menu.contextual, menu);
+      return true;
+    }
 
-                                                    @Override
-                                                    public boolean onPrepareActionMode(ActionMode mode, Menu menu)
-                                                    {
-                                                      return false;
-                                                    }
+    @Override
+    public boolean onPrepareActionMode(ActionMode mode, Menu menu)
+    {
+      return false;
+    }
 
-                                                    @Override
-                                                    public void onDestroyActionMode(ActionMode mode)
-                                                    {
-                                                      mActionMode = null;
-                                                    }
+    @Override
+    public void onDestroyActionMode(ActionMode mode)
+    {
+      mActionMode = null;
+    }
 
-                                                    @Override
-                                                    public boolean onActionItemClicked(ActionMode mode, MenuItem item)
-                                                    {
-                                                      switch (item.getItemId())
-                                                      {
-                                                      case R.id.toast:
-                                                        Toast.makeText(OverviewActivity.this, "Selected menu",
-                                                            Toast.LENGTH_LONG).show();
-                                                        return true;
-                                                      default:
-                                                        return false;
-                                                      }
-                                                    }
-                                                  };
+    @Override
+    public boolean onActionItemClicked(ActionMode mode, MenuItem item)
+    {
+      switch (item.getItemId())
+      {
+        case R.id.toast:
+          Toast.makeText(OverviewActivity.this, "Selected menu",
+                         Toast.LENGTH_LONG).show();
+          return true;
+        default:
+          return false;
+      }
+    }
+  };
 
 }
