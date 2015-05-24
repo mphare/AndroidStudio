@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TweenAnimation</string>
+    <string name="sun">The Sun</string>
+    <string name="grass">The Grass</string>
+    <string name="sky">The Sky</string>
+    <string name="clock">Clock Face</string>
+    <string name="hourhand">Hour Hand</string>
+</resources>
