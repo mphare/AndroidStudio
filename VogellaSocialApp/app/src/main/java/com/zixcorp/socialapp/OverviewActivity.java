@@ -24,6 +24,12 @@ public class OverviewActivity extends Activity
     startActivity(intent);
   }
 
+  public void showImage2(View view)
+  {
+    Intent intent = new Intent(this, SecondActivity.class);
+    startActivity(intent);
+  }
+
   @Override
   protected void onCreate(Bundle savedInstanceState)
   {
