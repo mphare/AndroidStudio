@@ -25,7 +25,7 @@
         android:contentDescription="@string/cloud"
         android:paddingLeft="170dp"
         android:paddingTop="70dp"
-        android:src="@drawable/Clouds"
+        android:src="@drawable/clouds"
         />
 
     <ImageView
@@ -35,7 +35,7 @@
         android:contentDescription="@string/cloud"
         android:paddingLeft="200dp"
         android:paddingTop="90dp"
-        android:src="@drawable/Clouds"
+        android:src="@drawable/clouds"
         />
 
     <ImageView
@@ -63,7 +63,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:padding="3dp"
-        android:src="@drawable/SteeringWheel"
+        android:src="@drawable/steeringwheel"
         />
 
 </RelativeLayout>
