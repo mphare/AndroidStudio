@@ -6,12 +6,22 @@ import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 public class MyActivity extends Activity
 {
+  public void frameAnimation(View view)
+  {
+
+    Intent intent = new Intent(this, FrameAnimation.class);
+    startActivity(intent);
+
+  }
+
   /**
    * Called when the activity is first created.
    */

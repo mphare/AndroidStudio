@@ -71,7 +71,7 @@ public class MainActivity extends ActionBarActivity
 
   public void pressTop(View view)
   {
-    Intent intent = new Intent(this, DisplayTopActivity.class);
+      Intent intent = new Intent(this, DisplayTopActivity.class);
     EditText editText = (EditText) findViewById(R.id.second_message);
     String message = editText.getText().toString();
     intent.putExtra(EXTRA_MESSAGE, message);
